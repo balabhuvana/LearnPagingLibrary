@@ -12,7 +12,7 @@ import com.example.myapplication.room.StudentRoomDatabase
 class StudentViewModel(application: Application) : AndroidViewModel(application) {
     private var studentDao: StudentDao
     private var studentRepository: StudentRepository
-    private var concreteList: LiveData<PagedList<Student>>? = null
+    var concreteList: LiveData<PagedList<Student>>? = null
     private val studentList: ArrayList<Student> = arrayListOf()
 
     init {

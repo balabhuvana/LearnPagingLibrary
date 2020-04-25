@@ -57,7 +57,7 @@ class RoomDataFragment : Fragment() {
         btnDeleteRecord.setOnClickListener {
             val student = Student()
             student.studentName = "Arun V 1"
-            student.studentRollNo = 10
+            student.studentRollNo = 13
             student.studentAge = 34 + 1
             student.studentPlace = "Salem $1"
             studentViewModel.deleteStudentRecord(student)
@@ -70,10 +70,12 @@ class RoomDataFragment : Fragment() {
             if (pagedListObject != null) {
                 Log.i("-----> ", "PageList Size : ${pagedListObject.size}")
                 for (student: Student in pagedListObject) {
-                    Log.i("ID :", "" + student.studentRollNo)
-                    Log.i("Name : ", "" + student.studentName)
-                    Log.i("Age : ", "" + student.studentAge)
-                    Log.i("Place : ", "" + student.studentPlace)
+                    if (student != null) {
+                        Log.i("ID :", "" + student.studentRollNo)
+                        Log.i("Name : ", "" + student.studentName)
+                        Log.i("Age : ", "" + student.studentAge)
+                        Log.i("Place : ", "" + student.studentPlace)
+                    }
                 }
                 studentAdapter?.submitList(pagedListObject)
             }
