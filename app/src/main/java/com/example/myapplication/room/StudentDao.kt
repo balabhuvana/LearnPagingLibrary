@@ -15,4 +15,7 @@ interface StudentDao {
     @Query("SELECT * FROM student_table")
     fun selectStudentListViaPagingLibrary(): DataSource.Factory<Int, Student>
 
+    @Update
+    fun updateStudentRecord(student: Student)
+
 }

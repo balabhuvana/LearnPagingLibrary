@@ -6,4 +6,5 @@
     <string name="insert_record">Insert Data</string>
     <string name="select_record">Select Record</string>
     <string name="delete_record">Delete Record</string>
+    <string name="update_record">Update Record</string>
 </resources>

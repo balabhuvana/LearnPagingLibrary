@@ -54,6 +54,15 @@ class RoomDataFragment : Fragment() {
             observerPageList()
         }
 
+        btnUpdateRecord.setOnClickListener {
+            val student = Student()
+            student.studentName = "Deva V 1"
+            student.studentRollNo = 7
+            student.studentAge = 36 + 1
+            student.studentPlace = "Thiruvannamalai"
+            studentViewModel.updateRecord(student)
+        }
+
         btnDeleteRecord.setOnClickListener {
             val student = Student()
             student.studentName = "Arun V 1"

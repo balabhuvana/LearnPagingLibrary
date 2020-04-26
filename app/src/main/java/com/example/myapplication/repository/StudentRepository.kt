@@ -29,4 +29,10 @@ class StudentRepository(private var studentDao: StudentDao) {
         }
     }
 
+    fun updateRecord(student: Student) {
+        GlobalScope.launch {
+            studentDao.updateStudentRecord(student)
+        }
+    }
+
 }

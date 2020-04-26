@@ -159,6 +159,10 @@ class StudentViewModel(application: Application) : AndroidViewModel(application)
         concreteList = studentRepository.selectStudentListViaPagingLibrary()
     }
 
+    fun updateRecord(student: Student){
+        studentRepository.updateRecord(student)
+    }
+
     fun deleteStudentRecord(student: Student) {
         studentRepository.deleteRecord(student)
     }
