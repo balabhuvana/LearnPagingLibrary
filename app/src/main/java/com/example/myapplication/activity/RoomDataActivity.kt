@@ -1,9 +1,9 @@
 package com.example.myapplication.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.R
-import com.example.myapplication.fragment.RoomDataFragment
+import com.example.myapplication.fragment.RoomViaNetworkFragment
 
 class RoomDataActivity : AppCompatActivity() {
 
@@ -16,7 +16,7 @@ class RoomDataActivity : AppCompatActivity() {
 
     private fun launchRoomDataFragment() {
         supportFragmentManager.beginTransaction()
-            .replace(R.id.myRoomDataFrameLayout, RoomDataFragment())
+            .replace(R.id.myRoomDataFrameLayout, RoomViaNetworkFragment())
             .commit()
     }
 }

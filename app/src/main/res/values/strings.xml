@@ -7,4 +7,6 @@
     <string name="select_record">Select Record</string>
     <string name="delete_record">Delete Record</string>
     <string name="update_record">Update Record</string>
+    <string name="from_network">From Network</string>
+    <string name="from_database">From Database</string>
 </resources>
